@@ -19,7 +19,8 @@ If you want to use the code there are several steps you might want to consider b
 - train set and test set are constructed of the following:
     - train set: constructed from two sources one was synthetically generated and the other is a real life data set both from kaggle (Link will be given at the end). The *train1_df* and *train2_df* variable are where either file names could go in.
     - test set: constructed of the test set of the synthetically generated data competition.
- The rest of the code will run successfully if test set and train set are specified as the instructed way above.
+
+The rest of the code will run successfully if test set and train set are specified as the instructed way above.
  
  ## Found a bug?
  We would love some feedback in the comments. Please be as ruthless as possible we would love to learn from anyone willing to point out any issue. (professor if you are reading this please give us feedback :) )
