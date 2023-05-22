@@ -24,5 +24,6 @@ If you want to use the code there are several steps you might want to consider b
  ## Found a bug?
  We would love some feedback in the comments. Please be as ruthless as possible we would love to learn from anyone willing to point out any issue. (professor if you are reading this please give us feedback :) )
  
- ###links:
- 
+ ### links:
+- Kaggle competition (1st train set + test set): https://www.kaggle.com/competitions/playground-series-s3e2/data
+- Kaggle real world data set (2nd train set): https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
