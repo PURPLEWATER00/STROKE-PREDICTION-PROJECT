@@ -12,7 +12,7 @@ This project was a task given to us by a professor in one of our uni courses. We
 
 ## PROJECT STRUCTRE
 The following map shows the flow of the project:
-![LAST](https://github.com/PURPLEWATER00/STROKE-PREDICTION-PROJECT/assets/121344707/9e29cbad-1c8d-4d62-bd8d-39b835d340b6)
+![LAST](https://github.com/PURPLEWATER00/STROKE-PREDICTION-PROJECT/assets/121344707/dd14e766-c8b1-49c7-8651-d759eb0b46b0)
 
 ## PROJECT USAGE:
 If you want to use the code there are several steps you might want to consider before runnin the code:
