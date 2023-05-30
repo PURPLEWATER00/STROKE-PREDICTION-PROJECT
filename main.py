@@ -24,7 +24,19 @@ work_type = st.radio("Which of the following best descibes your work type?", ('P
 residence_type = st.radio("What is your residence type?", ('Urban', 'Rural'))
 smoking_status = st.radio("What is your smoking status?",('formerly smoked', 'never smoked', 'smokes'))
 
-test_df = [[age,avg_glucose_level, bmi, ever_married, gender, work_type, residence_type, smoking_status]]
+data = {
+    'age': [age],
+    'avg_glucose_level': [avg_glucose_level],
+    'bmi': [bmi],
+    'ever_married': [ever_married],
+    'gender': [gender],
+    'work_type': [work_type],
+    'residence_type': [residence_type],
+    'smoking_status': [smoking_status]
+}
+
+df = pd.DataFrame(data)
+
 
 cat_val = test_df.select_dtypes('object')
 test_df = pd.get_dummies(test_df, columns= cat_val.columns)
