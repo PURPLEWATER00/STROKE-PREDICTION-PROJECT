@@ -25,7 +25,7 @@ def main():
     set_video_background()
 
     # Your Streamlit app content goes here
-    st.title("Streamlit App with Video Background")
+    st.write("Streamlit App with Video Background")
     st.write("Welcome to my app!")
 
 
