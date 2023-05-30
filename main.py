@@ -45,7 +45,10 @@ smoking_status_formerly_smoked_indx = 1 if smoking_status_input == "formerly smo
 smoking_status_smokes_indx = 1 if smoking_status_input == "smokes" else 0
 
 data = {
-    "ever_married": [ever_married_indx ],
+    "age": [age],
+    "avg_glucose_level": [avg_glucose_level],
+    "bmi": [bmi],
+    "ever_married_Yes": [ever_married_indx],
     "gender_Male": [gender_indx ],
     "work_type_Govt_job": [work_type_indx ["Govt_job"]],
     "work_type_Never_worked": [work_type_indx ["Never_worked"]],
