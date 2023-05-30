@@ -22,7 +22,7 @@ def set_bg_hack_url():
          f"""
          <style>
          .stApp {{
-             background: url("https://cdn.clinicallabmanager.com/assets/articleNo/25965/aImg/48237/first-accelerator-facility-for-innovative-clinical-lab-tests-l.jpg");
+             background: url("https://img.freepik.com/premium-vector/gradient-realistic-science-laboratory-background-interior-workplace-lab-analysis-test_513217-115.jpg");
              background-size: cover
          }}
          </style>
