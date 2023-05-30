@@ -38,8 +38,7 @@ data = {
 test_df = pd.DataFrame(data)
 
 
-cat_val = test_df.select_dtypes('object')
-test_df = pd.get_dummies(test_df, columns= cat_val.columns)
+test_df = pd.get_dummies(test_df, columns= ['ever_married', 'gender', 'work_type', 'residence_type','smoking_status'])
 test_df=test_df.drop(['gender_Female', 'ever_married_No', 'smoking_status_never smoked', 'Residence_type_Rural'], axis=1)
 
 pred_prob = model.predict_proba(x_test)[:,1]
