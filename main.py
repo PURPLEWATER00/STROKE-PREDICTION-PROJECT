@@ -29,7 +29,7 @@ def set_bg_hack_url():
          """,
          unsafe_allow_html=True
      )
-
+set_bg_hack_url() 
 
 model = pickle.load(open('model.pkl','rb'))
 
