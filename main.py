@@ -31,6 +31,26 @@ def set_bg_hack_url():
      )
 set_bg_hack_url() 
 
+# Load Animation
+animation_symbol = "👾"
+
+st.markdown(
+    f"""
+    <div class="snowflake">{animation_symbol}</div>
+    <div class="snowflake">{animation_symbol}</div>
+    <div class="snowflake">{animation_symbol}</div>
+    <div class="snowflake">{animation_symbol}</div>
+    <div class="snowflake">{animation_symbol}</div>
+    <div class="snowflake">{animation_symbol}</div>
+    <div class="snowflake">{animation_symbol}</div>
+    <div class="snowflake">{animation_symbol}</div>
+    <div class="snowflake">{animation_symbol}</div>
+    """,
+    unsafe_allow_html=True,
+)
+
+
+
 model = pickle.load(open('model.pkl','rb'))
 
 st.header('🧠  STROKE PREDICTION MODEL')
