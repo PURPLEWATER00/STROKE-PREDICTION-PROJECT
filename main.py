@@ -9,10 +9,26 @@ st.set_page_config(
     	layout = 'wide',
     	initial_sidebar_state='expanded'
 )
-<video controls>
-	<source type="video/webm" src="data:video/webm;base64,GkXfowEAAAAAAAAfQoaBAUL3gQFC8......jVOrhB9DtnVTrIMQTPc=">
-	<source type="video/mp4" src="data:video/mp4;base64,AAAAHGZ0eXBtcDQyAAAAAG1wNDJpc29....../l/L+X8v5AAAAMgfDg==">
-</video>
+
+
+
+def set_video_background():
+    video_url = 'https://www.youtube.com/watch?v=fG_X-cx5Szg&pp=ygUXdmlkZW8gb2Ygb2NlYW4gaGlnaCByZXM%3D'
+    video_html = f'''
+    <video loop autoplay muted playsinline style="position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%;">
+        <source src="{video_url}" type="video/mp4">
+    </video>
+    '''
+    st.markdown(video_html, unsafe_allow_html=True)
+
+def main():
+    set_video_background()
+
+    # Your Streamlit app content goes here
+    st.title("Streamlit App with Video Background")
+    st.write("Welcome to my app!")
+
+
 model = pickle.load(open('model.pkl','rb'))
 
 st.header('🧠  STROKE PREDICTION MODEL')
@@ -70,6 +86,9 @@ pred_prob = model.predict_proba(test_df)[:,1]
 
 st.subheader('Output')
 st.metric('Predicted probability of having a stroke = ', pred_prob, '')
+
+if __name__ == '__main__':
+    main()
 
 
 
