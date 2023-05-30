@@ -30,6 +30,13 @@ def set_bg_hack_url():
          unsafe_allow_html=True
      )
 set_bg_hack_url() 
+# Use local CSS
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+
+local_css("style/style.css")
 
 # Load Animation
 animation_symbol = "👾"
