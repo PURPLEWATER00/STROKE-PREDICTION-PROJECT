@@ -15,10 +15,11 @@ def set_video_background():
     video_url = 'https://www.youtube.com/watch?v=fG_X-cx5Szg&pp=ygUXdmlkZW8gb2Ygb2NlYW4gaGlnaCByZXM%3D'
 
     video_html = f'''
-    <video autoplay loop muted style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+    <video autoplay loop muted class="video-background">
         <source src="{video_url}" type="video/mp4">
     </video>
     '''
+    st.markdown('<link href="styles.css" rel="stylesheet">', unsafe_allow_html=True)
     st.markdown(video_html, unsafe_allow_html=True)
 
 def main():
