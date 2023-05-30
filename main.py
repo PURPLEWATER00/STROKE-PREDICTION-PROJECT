@@ -60,7 +60,7 @@ data = {
 test_df = pd.DataFrame(data)
 
 
-pred_prob = model.predict_proba(x_test)[:,1]
+pred_prob = model.predict_proba(test_df)[:,1]
 
 st.subheader('Output')
 st.metric('Predicted probability of having a stroke = ', pred_prob, '')
