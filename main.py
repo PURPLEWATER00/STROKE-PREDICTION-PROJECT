@@ -12,7 +12,7 @@ st.set_page_config(
 
 model = pickle.load(open('model.pkl','rb'))
 
-st.title = ('STROKE PREDICTION MODEL🧠')
+st.title('STROKE PREDICTION MODEL🧠')
 
 st.sidebar.write('Input features: NOTE: 0 = NO, 1 = YES')
 age = st.sidebar.slider('Age:', 1, 100, 20)
