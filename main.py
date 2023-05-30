@@ -12,7 +12,7 @@ st.set_page_config(
 
 model = pickle.load(open('model.pkl','rb'))
 
-st.title('A title with _italics_ :blue[colors] and emojis :sunglasses:')
+st.header('This is a header')
 
 st.sidebar.write('Input features: NOTE: 0 = NO, 1 = YES')
 age = st.sidebar.slider('Age:', 1, 100, 20)
