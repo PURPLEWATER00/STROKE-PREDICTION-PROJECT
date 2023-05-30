@@ -11,18 +11,15 @@ st.set_page_config(
 )
 
 
-
 def set_video_background():
     video_url = 'https://www.youtube.com/watch?v=fG_X-cx5Szg&pp=ygUXdmlkZW8gb2Ygb2NlYW4gaGlnaCByZXM%3D'
-    video_css = f'''
-    <style>
-    body {{
-        background: url('{video_url}') no-repeat center center fixed;
-        background-size: cover;
-    }}
-    </style>
+
+    video_html = f'''
+    <video autoplay loop muted style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+        <source src="{video_url}" type="video/mp4">
+    </video>
     '''
-    st.markdown(video_css, unsafe_allow_html=True)
+    st.markdown(video_html, unsafe_allow_html=True)
 
 def main():
     set_video_background()
