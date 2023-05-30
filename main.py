@@ -9,12 +9,15 @@ st.set_page_config(
     	layout = 'wide',
     	initial_sidebar_state='expanded'
 )
-
+<video controls>
+	<source type="video/webm" src="data:video/webm;base64,GkXfowEAAAAAAAAfQoaBAUL3gQFC8......jVOrhB9DtnVTrIMQTPc=">
+	<source type="video/mp4" src="data:video/mp4;base64,AAAAHGZ0eXBtcDQyAAAAAG1wNDJpc29....../l/L+X8v5AAAAMgfDg==">
+</video>
 model = pickle.load(open('model.pkl','rb'))
 
 st.header('🧠  STROKE PREDICTION MODEL')
 
-st.sidebar.write('Input features: NOTE: 0 = NO, 1 = YES')
+st.sidebar.write('Input features:')
 age = st.sidebar.slider('Age:', 1, 100, 20)
 avg_glucose_level = st.sidebar.slider('Glucose level', 1.0, 1000.0, 250.0)
 bmi = st.sidebar.slider('What is your BMI?', 1.0, 100.0, 24.9)
