@@ -21,10 +21,10 @@ bmi = st.sidebar.slider('What is your BMI?', 1, 100, 24.9)
 ever_married = st.radio("Are you married?", ('Yes', 'No'))
 gender = st.radio("What is your gender?", ('Male', 'Female'))
 work_type = st.radio("Which of the following best descibes your work type?", ('Private', 'Self-employed','Govt_job', 'children', 'Never_worked'))
-Residence_type = st.radio("What is your residence type?", ('Urban', 'Rural'))
+residence_type = st.radio("What is your residence type?", ('Urban', 'Rural'))
 smoking_status = st.radio("What is your smoking status?",('formerly smoked', 'never smoked', 'smokes'))
 
-test_df = [[age,avg_glucose_level, bmi, ever_married, gender, work_type, Residence_type, smoking_status]]
+test_df = [[age,avg_glucose_level, bmi, ever_married, gender, work_type, residence_type, smoking_status]]
 
 cat_val = test_df.select_dtypes('object')
 test_df = pd.get_dummies(test_df, columns= cat_val.columns)
