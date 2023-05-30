@@ -10,23 +10,16 @@ st.set_page_config(
     	initial_sidebar_state='expanded'
 )
 
-def set_image_background():
-    image_url = 'https://cdn.clinicallabmanager.com/assets/articleNo/25965/aImg/48237/first-accelerator-facility-for-innovative-clinical-lab-tests-l.jpg'
+page_bg_img = '''
+<style>
+body {
+background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
+background-size: cover;
+}
+</style>
+'''
 
-    st.markdown(
-        f"""
-        <style>
-        body {{
-            background: url('{image_url}') no-repeat center center fixed;
-            background-size: cover;
-        }}
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-
-def main():
-    set_image_background()
+st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
 model = pickle.load(open('model.pkl','rb'))
@@ -87,6 +80,4 @@ pred_prob = model.predict_proba(test_df)[:,1]
 st.subheader('Output')
 st.metric('Predicted probability of having a stroke = ', pred_prob, '')
 
-if __name__ == '__main__':
-    main()
 
