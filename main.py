@@ -22,7 +22,7 @@ def set_bg_hack_url():
          f"""
          <style>
          .stApp {{
-             background: url("https://img.freepik.com/free-vector/technology-digital-data-mesh-network-background_1017-19691.jpg?w=1380&t=st=1685486360~exp=1685486960~hmac=f19cefd46db0c7ecfadbe0999c19db2d53f24d77040abb62d935553cc3699c0b");
+             background: url("https://img.freepik.com/free-vector/purple-gradient-technology-background_23-2149118847.jpg?w=1060&t=st=1685489061~exp=1685489661~hmac=54c181038140628e0090df526d42eed014f7498fb30171c5c5b28199a4a4561f");
              background-size: cover
          }}
          </style>
