@@ -10,24 +10,23 @@ st.set_page_config(
     	initial_sidebar_state='expanded'
 )
 
+def set_image_background():
+    image_url = 'https://cdn.clinicallabmanager.com/assets/articleNo/25965/aImg/48237/first-accelerator-facility-for-innovative-clinical-lab-tests-l.jpg'
 
-def set_video_background():
-    video_url = 'https://www.youtube.com/watch?v=fG_X-cx5Szg&pp=ygUXdmlkZW8gb2Ygb2NlYW4gaGlnaCByZXM%3D'
-
-    video_html = f'''
-    <video autoplay loop muted class="video-background">
-        <source src="{video_url}" type="video/mp4">
-    </video>
-    '''
-    st.markdown('<link href="styles.css" rel="stylesheet">', unsafe_allow_html=True)
-    st.markdown(video_html, unsafe_allow_html=True)
+    st.markdown(
+        f"""
+        <style>
+        body {{
+            background: url('{image_url}') no-repeat center center fixed;
+            background-size: cover;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
 
 def main():
-    set_video_background()
-
-    # Your Streamlit app content goes here
-    st.write("Streamlit App with Video Background")
-    st.write("Welcome to my app!")
+    set_image_background()
 
 
 model = pickle.load(open('model.pkl','rb'))
@@ -90,6 +89,4 @@ st.metric('Predicted probability of having a stroke = ', pred_prob, '')
 
 if __name__ == '__main__':
     main()
-
-
 
