@@ -1,7 +1,7 @@
 /* customizable snowflake styling */
 .snowflake {
   color: #FFF;
-  font-size: 10em;
+  font-size: 5em;
   font-family: Arial;
   text-shadow: 0 0 1px #000;
 }
