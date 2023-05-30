@@ -22,7 +22,7 @@ def set_bg_hack_url():
          f"""
          <style>
          .stApp {{
-             background: url("https://img.freepik.com/premium-vector/gradient-realistic-science-laboratory-background-interior-workplace-lab-analysis-test_513217-115.jpg");
+             background: url("https://img.freepik.com/free-vector/colorful-design-science-education_23-2148484343.jpg?w=1060&t=st=1685486096~exp=1685486696~hmac=7c2cb8bb1c7a0372589ee60390ab23e7d4922f543124ae37cf9d194fefe975bb");
              background-size: cover
          }}
          </style>
