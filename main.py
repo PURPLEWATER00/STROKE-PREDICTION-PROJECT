@@ -6,15 +6,15 @@ import pandas as pd
 st.set_page_config(
 	page_title = 'STROKE PREDICTION MODEL',
 	page_icon = '🧠',
-    layout = 'wide',
-    initial_sidebar_state='expanded'
+    	layout = 'wide',
+    	initial_sidebar_state='expanded'
 )
 
 model = pickle.load(open('model.pkl','rb'))
 
 st.title = ('STROKE PREDICTION MODEL🧠')
 
-st.sidebar('Input features: NOTE: 0 = NO, 1 = YES')
+st.sidebar.write('Input features: NOTE: 0 = NO, 1 = YES')
 age = st.sidebar.slider('Sepal length', 1, 100, 20)
 avg_glucose_level = st.sidebar.slider('Glucose level', 1, 1000, 250)
 bmi = st.sidebar.slider('What is your BMI?', 1, 100, 24.9)
