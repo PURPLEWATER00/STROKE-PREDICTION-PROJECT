@@ -10,7 +10,7 @@ st.set_page_config(
     initial_sidebar_state='expanded'
 )
 
-model = pickle.load(open('model.pkl','wb'))
+model = pickle.load(open('model.pkl','rb'))
 
 st.title = ('STROKE PREDICTION MODEL🧠')
 
