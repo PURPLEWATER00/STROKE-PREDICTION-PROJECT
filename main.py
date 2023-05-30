@@ -35,7 +35,7 @@ data = {
     'smoking_status': [smoking_status]
 }
 
-df = pd.DataFrame(data)
+test_df = pd.DataFrame(data)
 
 
 cat_val = test_df.select_dtypes('object')
