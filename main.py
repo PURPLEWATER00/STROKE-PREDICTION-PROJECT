@@ -24,22 +24,40 @@ work_type = st.radio("Which of the following best descibes your work type?", ('P
 residence_type = st.radio("What is your residence type?", ('Urban', 'Rural'))
 smoking_status = st.radio("What is your smoking status?",('formerly smoked', 'never smoked', 'smokes'))
 
+
+ever_married_indx = 1 if ever_married == "Yes" else 0
+gender_indx = 1 if gender == "Male" else 0
+
+work_type_input = work_type
+work_type_indx  = {
+    "Private": 0,
+    "Self-employed": 0,
+    "Govt_job": 0,
+    "children": 0,
+    "Never_worked": 0,
+}
+work_type_indx[work_type_input] = 1
+
+residence_type_indx  = 1 if residence_type == "Urban" else 0
+
+smoking_status_input = smoking_status
+smoking_status_formerly_smoked_indx = 1 if smoking_status_input == "formerly smoked" else 0
+smoking_status_smokes_indx = 1 if smoking_status_input == "smokes" else 0
+
 data = {
-    'age': [age],
-    'avg_glucose_level': [avg_glucose_level],
-    'bmi': [bmi],
-    'ever_married': [ever_married],
-    'gender': [gender],
-    'work_type': [work_type],
-    'residence_type': [residence_type],
-    'smoking_status': [smoking_status]
+    "ever_married": [ever_married_indx ],
+    "gender_Male": [gender_indx ],
+    "work_type_Govt_job": [work_type_indx ["Govt_job"]],
+    "work_type_Never_worked": [work_type_indx ["Never_worked"]],
+    "work_type_Private": [work_type_indx ["Private"]],
+    "work_type_Self-employed": [work_type_indx ["Self-employed"]],
+    "work_type_children": [work_type_indx ["children"]],
+    "Residence_type_Urban": [residence_type_indx ],
+    "smoking_status_formerly smoked": [smoking_status_formerly_smoked_indx ],
+    "smoking_status_smokes": [smoking_status_smokes_indx ]
 }
 
 test_df = pd.DataFrame(data)
-
-cat_val = test_df.select_dtypes('object')
-test_df = pd.get_dummies(test_df, columns=cat_val.columns)
-test_df = test_df.drop(['gender_Female', 'ever_married_No', 'smoking_status_never smoked', 'Residence_type_Rural'], axis=1)
 
 
 pred_prob = model.predict_proba(x_test)[:,1]
