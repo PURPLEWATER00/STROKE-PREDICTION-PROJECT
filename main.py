@@ -13,11 +13,11 @@ st.set_page_config(
 
 
 def set_video_background():
-    video_url = 'https://example.com/path/to/your/video.mp4'
+    video_url = 'https://www.youtube.com/watch?v=fG_X-cx5Szg&pp=ygUXdmlkZW8gb2Ygb2NlYW4gaGlnaCByZXM%3D'
     video_css = f'''
     <style>
     body {{
-        background: url('{https://www.youtube.com/watch?v=fG_X-cx5Szg&pp=ygUXdmlkZW8gb2Ygb2NlYW4gaGlnaCByZXM%3D}') no-repeat center center fixed;
+        background: url('{video_url}') no-repeat center center fixed;
         background-size: cover;
     }}
     </style>
