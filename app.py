@@ -10,26 +10,6 @@ st.set_page_config(
     	initial_sidebar_state='expanded'
 )
 
-def set_bg_hack_url():
-    '''
-    A function to unpack an image from url and set as bg.
-    Returns
-    -------
-    The background.
-    '''
-        
-    st.markdown(
-         f"""
-         <style>
-         .stApp {{
-             background: url("https://static.vecteezy.com/system/resources/thumbnails/015/287/575/original/purple-themed-particle-form-futuristic-neon-graphic-background-science-energy-3d-abstract-art-element-illustration-technology-artificial-intelligence-shape-theme-wallpaper-animation-free-video.jpg");
-             background-size: cover
-         }}
-         </style>
-         """,
-         unsafe_allow_html=True
-     )
-set_bg_hack_url() 
 # Use local CSS
 def local_css(file_name):
     with open(file_name) as f:
