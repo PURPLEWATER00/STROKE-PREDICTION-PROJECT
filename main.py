@@ -1,6 +1,8 @@
 import streamlit as st
 import pickle 
 import pandas as pd
+import sklearn
+
 
 st.set_page_config(
 	page_title = 'STROKE PREDICTION MODEL',
