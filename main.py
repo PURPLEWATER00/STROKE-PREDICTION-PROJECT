@@ -22,7 +22,7 @@ def set_bg_hack_url():
          f"""
          <style>
          .stApp {{
-             background: url("https://img.freepik.com/free-photo/3d-render-modern-background-with-flowing-cyber-dots-design_1048-14068.jpg?w=996&t=st=1685489436~exp=1685490036~hmac=41f28f2e9a9aa2e41fecbac05726afd90dc02f32257aab07e1984a92d334079f");
+             background: url("https://pin.it/bgHakkG");
              background-size: cover
          }}
          </style>
