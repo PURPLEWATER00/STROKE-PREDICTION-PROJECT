@@ -98,10 +98,4 @@ st.subheader('Output')
 st.metric('Predicted probability of having a stroke = ', pred_prob, '')
 
 
-from streamlit_qrcode_scanner import qrcode_scanner
-
-qr_code = qrcode_scanner(key='qrcode_scanner')
-
-if qr_code:
-    st.write(qr_code)
 
