@@ -5,6 +5,7 @@
 This project was a task given to us by a professor in one of our uni courses. We are sophmores majoring in AI ENGINEERING and the course of this project is called **introduction to data science**. The code contains EDA, a lot of visualization and an SVM model to predict a stroke occurance. Data are from two sources in kaggle more detail on sources are going to be given later on. 
 
 please refer to this link to show interactive plots:https://nbviewer.org/github/PURPLEWATER00/STROKE-PREDICTION-PROJECT/blob/main/final%20final.ipynb
+
 model deployed in streamlit link: https://purplewater00-stroke-prediction-project-main-vbxln1.streamlit.app/
 
 * EDA 
