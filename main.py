@@ -45,7 +45,7 @@ st.header('🧠  STROKE PREDICTION MODEL')
 
 st.sidebar.write('Input features:')
 age = st.sidebar.slider('Age:', 1, 100, 20)
-avg_glucose_level = st.sidebar.slider('Glucose level', 1.0, 1000.0, 250.0)
+avg_glucose_level = st.sidebar.slider('Glucose level', 1.0, 500.0, 70.0)
 bmi = st.sidebar.slider('What is your BMI?', 1.0, 100.0, 24.9)
 ever_married = st.radio("Are you married?", ('Yes', 'No'))
 gender = st.radio("What is your gender?", ('Male', 'Female'))
