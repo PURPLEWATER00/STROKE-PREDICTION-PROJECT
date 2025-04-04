@@ -10,7 +10,7 @@ st.set_page_config(
     	layout = 'wide',
     	initial_sidebar_state='expanded'
 )
-
+ 
 # Use local CSS
 def local_css(file_name):
     with open(file_name) as f:
